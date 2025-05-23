@@ -1,4 +1,3 @@
-import { Home } from 'lucide-react';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Pages/Navbar';
@@ -7,6 +6,9 @@ import PortfolioSection from './Components/PortfoilioSrction';
 import ExperienceSection from './Components/ExperienceSection';
 import Testimonials from './Components/Tesimonal';
 import SkillsSection from './Components/SkillsSdection';
+import Home  from './Components/Pages/Home';
+
+
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={} />
+        <Route path="/" element={<Home/>} />
         <Route path="/work" element={<PortfolioSection />} />
         <Route path="/skills" element={<SkillsSection />} />
         <Route path="/experience" element={<ExperienceSection />} />

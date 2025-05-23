@@ -8,18 +8,18 @@ import SkillsSection from '../SkillsSdection'
 import PortfolioSection from '../PortfoilioSrction'
 
 
-
 function Home() {
   return (
-   <>
-   <Hero/>
+    <>
+    <Hero/>
    <StatsSection />
    <ExperienceSection/>
    <SkillsSection/>
    <PortfolioSection/>
    <Testimonials/>
    <Contact/>
-   </>
+    </>
+   
   )
 }
 
