@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './component/Navbar';
 import Home from './Component/Pages/Home';
 import PortfolioSection from './Component/PortfoilioSrction';
 import SkillsSection from './Component/SkillsSdection';
 import ExperienceSection from './Component/ExperienceSection';
 import Tesimonal from './Component/Tesimonal';
-import Footer from './Component/Footer';
+
+import Navbar from './Component/Pages/Navbar';
+import Footer from './Component/Pages/Footer';
 
 function App() {
   return (
