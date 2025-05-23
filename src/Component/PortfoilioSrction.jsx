@@ -1,0 +1,89 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+const projects = [
+  {
+    title: "Travel Agency",
+    image: "./assids/project 1.png",
+    description: "Explore the world with us! We offer unforgettable journeys tailored to your dreams.",
+    link: "https://travel-agency.example.com",
+  },
+  {
+    title: "Infinity Jobs",
+    image: "./assids/project 2.png",
+    description: "A MERN stack job portal for posting and applying to jobs with user login and responsive design.",
+    link: "https://infinity-jobs.example.com",
+  },
+  {
+    title: "Lets Falafal",
+    image: "./assids/project 3.png",
+    description: "Fresh, authentic falafel made daily. Taste the difference!",
+    link: "https://lets-falafal.example.com",
+  },
+  {
+    title: "Traveler website",
+    description: "Explore hotels, tours, and palaces for unforgettable journeys!.",
+    image: "./assids/project 4.png",
+    link: "https://traveler-website.example.com",
+  },
+  {
+    title: "E-Cart Ecommerce",
+    description: "Your go-to online store for quality products at unbeatable prices!.",
+    image: "./assids/project 5.png",
+    link: "https://e-cart.example.com",
+  },
+  {
+    title: "Dribble clone",
+    description: "Explore, showcase, and connect with design inspiration in our Dribbble clone.",
+    image: "./assids/project 6.png",
+    link: "https://dribble-clone.example.com",
+  },
+];
+
+export default function PortfolioSection() {
+  const [showAll, setShowAll] = useState(false);
+
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
+
+  return (
+    <div className="min-h-screen bg-black text-white py-16 px-6">
+      <h2 className="text-3xl font-bold text-center pt-[4rem] mb-12">💼 My Portfolio Highlights</h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {displayedProjects.map((project, index) => (
+          <motion.a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05, boxShadow: "0 8px 15px rgba(255, 255, 255, 0.2)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="bg-[#111] rounded-xl overflow-hidden shadow-lg border border-gray-700 cursor-pointer block"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <p className="text-sm text-gray-400">{project.description}</p>
+            </div>
+          </motion.a>
+        ))}
+      </div>
+
+      <div className="text-center mt-10">
+        <button
+          onClick={() => setShowAll(!showAll)}
+          className="px-6 py-2 text-white border border-gray-600 rounded hover:bg-white hover:text-black transition"
+        >
+          {showAll ? "Show Less" : "View More Projects"}
+        </button>
+      </div>
+    </div>
+  );
+}
