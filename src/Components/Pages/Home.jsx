@@ -1,22 +1,23 @@
 import React from 'react'
-
-import StatsSection from '../StatsSection'
 import Hero from '../Hero'
+import StatsSection from '../StatsSection'
 import ExperienceSection from '../ExperienceSection'
-import SkillsSdection from '../SkillsSdection'
-import PortfolioSection from '../PortfoilioSrction'
+import Testimonials from '../Tesimonal'
 import Contact from '../Contact'
-import Tesimonal from '../Tesimonal'
+import SkillsSection from '../SkillsSdection'
+import PortfolioSection from '../PortfoilioSrction'
+
+
 
 function Home() {
   return (
    <>
-   <Hero />
+   <Hero/>
    <StatsSection />
    <ExperienceSection/>
-   <SkillsSdection/>
+   <SkillsSection/>
    <PortfolioSection/>
-   <Tesimonal/>
+   <Testimonials/>
    <Contact/>
    </>
   )

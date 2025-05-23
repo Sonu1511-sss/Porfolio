@@ -1,13 +1,13 @@
+import { Home } from 'lucide-react';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Component/Pages/Home';
-import PortfolioSection from './Component/PortfoilioSrction';
-import SkillsSection from './Component/SkillsSdection';
-import ExperienceSection from './Component/ExperienceSection';
-import Tesimonal from './Component/Tesimonal';
+import Navbar from './Components/Pages/Navbar';
+import Footer from './Components/Pages/Footer';
+import PortfolioSection from './Components/PortfoilioSrction';
+import ExperienceSection from './Components/ExperienceSection';
+import Testimonials from './Components/Tesimonal';
+import SkillsSection from './Components/SkillsSdection';
 
-import Navbar from './Component/Pages/Navbar';
-import Footer from './Component/Pages/Footer';
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={} />
         <Route path="/work" element={<PortfolioSection />} />
         <Route path="/skills" element={<SkillsSection />} />
         <Route path="/experience" element={<ExperienceSection />} />
-        <Route path="/Testimonal" element={<Tesimonal />} />
+        <Route path="/Testimonal" element={<Testimonials />} />
 
       </Routes>
       <Footer/>
