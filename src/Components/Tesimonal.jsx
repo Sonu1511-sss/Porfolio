@@ -3,22 +3,22 @@ import { FaStar } from 'react-icons/fa';
 
 const testimonials = [
   {
-    name: "John Doe",
-    feedback: "Fantastic service! The team exceeded my expectations.",
+    name: "Kuldeep Kawre",
+    feedback: "Fantastic UI/UX and React developer creative, efficient, and user-focused!.",
     rating: 5,
-    image: "https://i.pravatar.cc/100?img=1",
+    image: "./assids/kulseep.jpg",
   },
   {
-    name: "Jane Smith",
-    feedback: "Highly professional and great communication throughout.",
+    name: "Connect Shiksha",
+    feedback: "Fantastic UI/UX and React developer creative, efficient, and user-focused!.",
     rating: 4,
-    image: "https://i.pravatar.cc/100?img=2",
+    image: "https://yt3.ggpht.com/0q_LVnVkDCA_OwPmn8dzYNdBB1e7tWZnY5YzNVMqYM8kwvPyhWNGK5Qx1URZd4Jl6IK2MHd7ZQ=s88-c-k-c0x00ffffff-no-rj",
   },
   {
-    name: "Mike Johnson",
-    feedback: "Delivered exactly what I asked for, and on time!",
+    name: "Bansal College, Bhopal",
+    feedback: "Fantastic UI/UX and React developer creative, efficient, and user-focused",
     rating: 5,
-    image: "https://i.pravatar.cc/100?img=3",
+    image: "./assids/bgi.jpg",
   },
 ];
 
