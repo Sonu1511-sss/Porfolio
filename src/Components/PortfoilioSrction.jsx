@@ -6,37 +6,37 @@ const projects = [
     title: "Travel Agency",
     image: "./assids/project 1.png",
     description: "Explore the world with us! We offer unforgettable journeys tailored to your dreams.",
-    link: "https://travel-agency.example.com",
+      link: 'https://puruliatravelsfinal.netlify.app/',
   },
   {
     title: "Infinity Jobs",
     image: "./assids/project 2.png",
     description: "A MERN stack job portal for posting and applying to jobs with user login and responsive design.",
-    link: "https://infinity-jobs.example.com",
+     link: 'https://job-portel-f-twv1.vercel.app/',
   },
   {
     title: "Lets Falafal",
     image: "./assids/project 3.png",
     description: "Fresh, authentic falafel made daily. Taste the difference!",
-    link: "https://lets-falafal.example.com",
+    link: 'https://lets-falafel.netlify.app/',
   },
   {
     title: "Traveler website",
     description: "Explore hotels, tours, and palaces for unforgettable journeys!.",
     image: "./assids/project 4.png",
-    link: "https://traveler-website.example.com",
+     link: 'https://66acc8920e15ab2e97459d74--comforting-cascaron-3f1f3e.netlify.app/',
   },
   {
     title: "E-Cart Ecommerce",
     description: "Your go-to online store for quality products at unbeatable prices!.",
     image: "./assids/project 5.png",
-    link: "https://e-cart.example.com",
+ link: 'https://e-cart-project-umber.vercel.app/',
   },
   {
     title: "Dribble clone",
     description: "Explore, showcase, and connect with design inspiration in our Dribbble clone.",
     image: "./assids/project 6.png",
-    link: "https://dribble-clone.example.com",
+    link: 'https://sonu1511-sss.github.io/landing-page/',
   },
 ];
 
