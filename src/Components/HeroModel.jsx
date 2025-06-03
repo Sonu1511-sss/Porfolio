@@ -2,7 +2,6 @@
 import React, { useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { gsap } from "gsap";
-import StarRain from "./StarRain";
 
 function RotatingCube() {
   const meshRef = useRef();
@@ -37,7 +36,6 @@ export default function ModelCanvas() {
     <Canvas camera={{ position: [0, 0, 6] }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[3, 3, 5]} />
-      <StarRain count={200} />
       <RotatingCube />
     </Canvas>
   );

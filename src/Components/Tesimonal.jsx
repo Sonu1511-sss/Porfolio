@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
@@ -25,15 +26,19 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="bg-black py-12 px-4 sm:px-6 lg:px-8 text-white">
-       <h2 className="text-4xl font-bold text-center text-white pt-[4rem] mb-12">
+      <h2 className="text-4xl font-bold text-center text-white pt-[4rem] mb-12">
         What People Say
       </h2>
 
       <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         {testimonials.map((review, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-black border-2 border-gray-200 p-6 rounded-xl shadow-lg text-center transform transition duration-500 hover:scale-105 animate-fade-in"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="bg-black border-2 border-gray-200 p-6 rounded-xl shadow-lg text-center transform transition duration-500 hover:scale-105"
           >
             <img
               src={review.image}
@@ -52,7 +57,7 @@ const Testimonials = () => {
               ))}
             </div>
             <p className="text-gray-300 italic">"{review.feedback}"</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
