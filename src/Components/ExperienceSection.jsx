@@ -38,7 +38,7 @@ const experiences = [
   {
   company: "Bansal College, Bhopal",
   role: "MERN Stack Developer & Hackathon Participant",
-  date: "2023",
+  date: "2025",
   responsibilities: [
     "Collaborated with Shryansh Coding Class on a MERN stack project..",
     "Participated in college hackathon and secured a top 10 position..",

@@ -14,12 +14,13 @@ const projects = [
     description: "A MERN stack job portal for posting and applying to jobs with user login and responsive design.",
     link: 'https://job-portel-f-twv1.vercel.app/',
   },
-  {
-    title: "Lets Falafal",
-    image: "./assids/project 3.png",
-    description: "Fresh, authentic falafel made daily. Taste the difference!",
-    link: 'https://lets-falafel.netlify.app/',
+    {
+    title: "Hangry",
+    image: "./assids/project 7.png",
+    description: "Fresh, authentic Hangry made daily. Taste the difference!",
+    link: 'https://hangry-frontend-seven.vercel.app/',
   },
+ 
   {
     title: "Traveler website",
     description: "Explore hotels, tours, and palaces for unforgettable journeys!",
@@ -32,12 +33,13 @@ const projects = [
     image: "./assids/project 5.png",
     link: 'https://e-cart-project-umber.vercel.app/',
   },
-  {
-    title: "Dribble clone",
-    description: "Explore, showcase, and connect with design inspiration in our Dribbble clone.",
-    image: "./assids/project 6.png",
-    link: 'https://sonu1511-sss.github.io/landing-page/',
+   {
+    title: "Lets Falafal",
+    image: "./assids/project 3.png",
+    description: "Fresh, authentic falafel made daily. Taste the difference!",
+    link: 'https://lets-falafel.netlify.app/',
   },
+  
 ];
 
 export default function PortfolioSection() {
