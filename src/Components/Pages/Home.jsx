@@ -8,6 +8,7 @@ import SkillsSection from '../SkillsSdection'
 import PortfolioSection from '../PortfoilioSrction'
 
 
+
 function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ function Home() {
    <SkillsSection/>
    <PortfolioSection/>
    <Testimonials/>
+  
    <Contact/>
     </>
    

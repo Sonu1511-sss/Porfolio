@@ -1,7 +1,18 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiJavascript, SiThreedotjs, SiGit, SiFigma, SiLeetcode } from "react-icons/si";
+import { DiJava } from "react-icons/di";
+
+import {
+  SiJavascript,
+  SiThreedotjs,
+  SiGit,
+  SiFigma,
+  SiLeetcode,
+  SiMongodb,
+  SiExpress,
+} from "react-icons/si";
+import { MdManageAccounts, MdOutlineDeveloperMode } from "react-icons/md";
 import clsx from "clsx";
 
 const skills = [
@@ -11,10 +22,32 @@ const skills = [
     hoverColor: "hover:bg-cyan-900",
   },
   {
-    title: "Backend Developer",
+    title: "Node.js Developer",
     icon: <FaNodeJs size={50} className="text-green-400" />,
     hoverColor: "hover:bg-green-900",
   },
+  {
+    title: "Express.js Developer",
+    icon: <SiExpress size={50} className="text-gray-400" />,
+    hoverColor: "hover:bg-gray-900",
+  },
+  {
+    title: "MongoDB Expert",
+    icon: <SiMongodb size={50} className="text-green-500" />,
+    hoverColor: "hover:bg-green-800",
+  },
+  {
+    title: "Project Manager",
+    icon: <MdManageAccounts size={50} className="text-blue-300" />,
+    hoverColor: "hover:bg-blue-900",
+  },
+  // Below this, rest appear in second line
+  {
+    title: "Java Developer",
+    icon: <DiJava size={50} className="text-red-500" />,
+    hoverColor: "hover:bg-red-900",
+  },
+
   {
     title: "JavaScript Developer",
     icon: <SiJavascript size={50} className="text-yellow-400" />,
@@ -30,7 +63,11 @@ const skills = [
     icon: <SiFigma size={50} className="text-pink-400" />,
     hoverColor: "hover:bg-pink-900",
   },
-  
+  {
+    title: "Interactive Developer",
+    icon: <MdOutlineDeveloperMode size={50} className="text-indigo-400" />,
+    hoverColor: "hover:bg-indigo-900",
+  },
 ];
 
 export default function SkillsSection() {
@@ -58,7 +95,7 @@ export default function SkillsSection() {
             transition={{
               type: "spring",
               stiffness: 200,
-              delay: index * 0.15,
+              delay: index * 0.1,
             }}
             viewport={{ once: true }}
             className={clsx(
