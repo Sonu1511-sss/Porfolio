@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { DiJava } from "react-icons/di";
-
+import { SiNextdotjs } from "react-icons/si";
 import {
   SiJavascript,
   SiThreedotjs,
@@ -37,17 +37,15 @@ const skills = [
     hoverColor: "hover:bg-green-800",
   },
   {
-    title: "Project Manager",
-    icon: <MdManageAccounts size={50} className="text-blue-300" />,
-    hoverColor: "hover:bg-blue-900",
+    title: "Next.js Developer",
+    icon: <SiNextdotjs size={50} className="text-white" />,
+    hoverColor: "hover:bg-neutral-900",
   },
-  // Below this, rest appear in second line
   {
     title: "Java Developer",
     icon: <DiJava size={50} className="text-red-500" />,
     hoverColor: "hover:bg-red-900",
   },
-
   {
     title: "JavaScript Developer",
     icon: <SiJavascript size={50} className="text-yellow-400" />,
@@ -69,6 +67,8 @@ const skills = [
     hoverColor: "hover:bg-indigo-900",
   },
 ];
+
+
 
 export default function SkillsSection() {
   const [rotatingIndex, setRotatingIndex] = useState(null);
