@@ -3,43 +3,68 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Travel Agency",
-    image: "./assids/project 1.png",
-    description: "Explore the world with us! We offer unforgettable journeys tailored to your dreams.",
+    id: 1,
+    title: 'PUMA Shoes E-commerce',
+    description: 'A sleek online store for PUMA footwear with product pages, cart, and checkout features...',
+    image: './assids/puma-.png',
+    link: 'https://mern-puma-f.vercel.app/',
+  },
+  {
+    id: 2,
+    title: 'Hangry Food',
+    description: 'A sleek food delivery app offering delicious meals with fast and easy ordering...',
+    image: './assids/project 7.png',
+    link: 'https://hangry-frontend-seven.vercel.app/',
+  },
+  {
+    id: 3,
+    title: 'Social Media Web App',
+    description: 'A full-featured MERN-based platform to share posts, connect, chat, and grow your network',
+    image: './assids/Socail-media.png',
+    link: 'https://socail-media-frontend-hv6r.vercel.app/auth/login',
+  },
+  {
+    id: 4,
+    title: 'Real-Time Chat App',
+    description: 'Modern chat app with real-time messaging, user auth, and Socket.io integration.',
+    image: './assids/Realtime-Chat-App.png',
+    link: 'real-time-chat122.netlify.app',
+  },
+  {
+    id: 5,
+    title: 'iPhone Landing Page',
+    description: 'A sleek replica of the official iPhone product page with smooth animations and responsive design..',
+    image: './assids/apple.png',
+    link: 'https://iphoneweb-psi.vercel.app/',
+  },
+  {
+    id: 6,
+    title: 'E-Cart Ecommerce',
+    description: 'Modern e-commerce site for browsing, cart management, and secure checkout..',
+    image: './assids/project 5.png',
+    link: 'https://e-cart-project-umber.vercel.app/',
+  },
+  {
+    id: 7,
+    title: 'Travel Agency',
+    description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams..',
+    image: './assids/project 1.png',
     link: 'https://puruliatravelsfinal.netlify.app/',
   },
   {
-    title: "Infinity Jobs",
-    image: "./assids/Infinity-Jobs-2.png",
-    description: "A MERN stack job portal for posting and applying to jobs with user login and responsive design.",
-    link: 'https://job-portel-f-twv1.vercel.app/',
-  },
-    {
-    title: "Hangry",
-    image: "./assids/project 7.png",
-    description: "Fresh, authentic Hangry made daily. Taste the difference!",
-    link: 'https://hangry-frontend-seven.vercel.app/',
-  },
- 
-  {
-    title: "Traveler website",
-    description: "Explore hotels, tours, and palaces for unforgettable journeys!",
-    image: "./assids/project 4.png",
+    id: 8,
+    title: 'Traveler website',
+    description: 'Explore hotels, tours, and palaces for unforgettable journeys!',
+    image: './assids/project 4.png',
     link: 'https://66acc8920e15ab2e97459d74--comforting-cascaron-3f1f3e.netlify.app/',
   },
   {
-    title: "E-Cart Ecommerce",
-    description: "Your go-to online store for quality products at unbeatable prices!",
-    image: "./assids/project 5.png",
-    link: 'https://e-cart-project-umber.vercel.app/',
+    id: 9,
+    title: 'Infinity Jobs',
+    description: 'A MERN stack job portal for posting and applying to jobs with user login and responsive design.',
+    image: './assids/Infinity-Jobs-2.png',
+    link: 'https://job-portel-f-twv1.vercel.app/',
   },
-   {
-    title: "Lets Falafal",
-    image: "./assids/project 3.png",
-    description: "Fresh, authentic falafel made daily. Taste the difference!",
-    link: 'https://lets-falafel.netlify.app/',
-  },
-  
 ];
 
 export default function PortfolioSection() {
