@@ -67,6 +67,38 @@ const skills = [
     hoverColor: "hover:bg-indigo-900",
   },
 ];
+const tools = [
+  {
+    title: "VS Code",
+    icon: <img src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="VS Code" className="w-12 h-12" />,
+    hoverColor: "hover:bg-blue-900",
+  },
+  {
+    title: "Postman",
+    icon: <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" alt="Postman" className="w-12 h-12" />,
+    hoverColor: "hover:bg-orange-800",
+  },
+  {
+    title: "Git",
+    icon: <SiGit size={50} className="text-red-400" />,
+    hoverColor: "hover:bg-red-900",
+  },
+  {
+    title: "ChatGPT",
+    icon: <img src="https://img.icons8.com/ios-filled/50/26e07f/chatgpt.png" alt="ChatGPT" className="w-12 h-12" />,
+    hoverColor: "hover:bg-green-900",
+  },
+  {
+    title: "Vercel",
+    icon: <img src="https://img.icons8.com/ios-filled/50/ffffff/vercel.png" alt="Vercel" className="w-12 h-12" />,
+    hoverColor: "hover:bg-neutral-800",
+  },
+  {
+    title: "Render",
+    icon: <img src="https://avatars.githubusercontent.com/u/44745388?s=200&v=4" alt="Render" className="w-12 h-12 rounded-full" />,
+    hoverColor: "hover:bg-indigo-800",
+  },
+];
 
 
 
@@ -78,6 +110,9 @@ export default function SkillsSection() {
   };
 
   return (
+    <>
+    
+    
     <div className="bg-black text-white py-16 px-4">
       <h2 className="text-3xl font-bold text-center pt-[4rem] mb-12">
         How I Can Contribute & My Key Skills
@@ -122,5 +157,34 @@ export default function SkillsSection() {
         ))}
       </div>
     </div>
+    <h2 className="text-3xl font-bold text-center mt-24 mb-12">Tools I Use</h2>
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+  {tools.map((tool, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      whileHover={{
+        y: -10,
+        boxShadow: "0 0 20px rgba(255, 255, 255, 0.2)",
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 200,
+        delay: index * 0.1,
+      }}
+      viewport={{ once: true }}
+      className={clsx(
+        "bg-[#111] rounded-2xl p-6 flex flex-col items-center text-center border border-gray-800 transition-colors duration-300 cursor-pointer",
+        tool.hoverColor
+      )}
+    >
+      <div className="mb-4">{tool.icon}</div>
+      <p className="text-lg font-semibold">{tool.title}</p>
+    </motion.div>
+  ))}
+</div>
+
+    </>
   );
 }
