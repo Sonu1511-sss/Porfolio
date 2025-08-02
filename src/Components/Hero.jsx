@@ -77,7 +77,7 @@ export default function Hero() {
 
           {/* Download CV Button */}
           <a
-            href="https://drive.google.com/file/d/1Wdu5k5jMtcd0e8V552-p1tG4lkYOLBIH/view?usp=drivesdk" // <-- Change this to your actual CV file path or URL
+            href="https://drive.google.com/file/d/14uMtLwHjRfjgOnAfdtFpuu_37yBJvvZh/view?usp=drivesdk" // <-- Change this to your actual CV file path or URL
             download
             className="relative mt-8 inline-block w-44 px-6 py-3 border-2 rounded-lg text-white font-semibold 
              overflow-hidden group focus:outline-none focus:ring-4 focus:ring-teal-400 focus:ring-opacity-50 shadow-lg
