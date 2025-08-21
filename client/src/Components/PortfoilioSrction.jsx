@@ -2,19 +2,40 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const projects = [
+   {
+    id: 10,
+    title: 'Code-Genius',
+    description: 'Code-Genisis is a MERN application powered by Google’s Gemini AI that helps developers explain, analyze, convert, review, and optimize code, while also generating comments, quizzes, and CS concept explanations for smarter development...',
+    image: './assids/Code-Genius.png',
+    link: 'https://code-gen-eight.vercel.app/',
+  },
   {
+    id: 1,
+    title: 'SkillSwap',
+    description: 'SkillSwap: A platform that connects people looking to learn new skills with those willing to teach. Users can create profiles, showcase their skills, browse others’ skills, and request skill exchanges, fostering community learning and collaboration...',
+    image: './assids/skillswap.png',
+    link: '#',
+  },
+   {
+    id: 1,
+    title: 'eDocConnect-AI',
+    description: 'An AI-powered healthcare platform for patients, doctors, and admins. Features role-based dashboards, secure login, smart appointment booking, AI symptom triage, and medication tracking. Built with React, Node.js, Express, and MongoDB...',
+    image: './assids/edoctConnect.png',
+    link: '#',
+  },
+  {
+    id: 2,
+    title: 'Hangry Food',
+    description: 'FoodExpress: A sleek food delivery app that lets users browse delicious meals and place orders quickly and effortlessly, ensuring fast, convenient, and satisfying dining experiences..',
+    image: './assids/project 7.png',
+    link: 'https://hangry-frontend-seven.vercel.app/',
+  },
+    {
     id: 1,
     title: 'PUMA Shoes E-commerce',
     description: 'A sleek online store for PUMA footwear with product pages, cart, and checkout features...',
     image: './assids/puma-.png',
     link: 'https://mern-puma-f.vercel.app/',
-  },
-  {
-    id: 2,
-    title: 'Hangry Food',
-    description: 'A sleek food delivery app offering delicious meals with fast and easy ordering...',
-    image: './assids/project 7.png',
-    link: 'https://hangry-frontend-seven.vercel.app/',
   },
   {
     id: 3,

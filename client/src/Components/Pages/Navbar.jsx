@@ -38,8 +38,8 @@ export default function Navbar() {
 
         {/* Contact Me Button */}
         <a
-          href="#"
-          className="relative mt-2 px-4 py-2 text-white font-semibold rounded-md w-fit
+          href="/Contact"
+          className="relative mt-2 px-4 py-2 text-white font-semibold rounded-full w-fit
             overflow-hidden group border border-white hidden md:inline-block"
         >
           <span
