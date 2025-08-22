@@ -4,7 +4,7 @@ import { SiLeetcode } from 'react-icons/si'; // Import LeetCode icon
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-6">
+    <footer className="bg-[#0b0f19] text-white py-6">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Logo or Brand Name */}
         <div className="text-2xl font-bold mb-4 text-teal-400 md:mb-0">
@@ -30,7 +30,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://leetcode.com/u/0kdoIRE2yt/e"
+            href="https://linktr.ee/shubhhuuu15"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400 transition"

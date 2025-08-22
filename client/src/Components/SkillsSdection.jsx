@@ -113,7 +113,7 @@ export default function SkillsSection() {
     <>
     
     
-    <div className="bg-black text-white py-16 px-4">
+    <div className="bg-[#0b0f19] text-white py-16 px-4">
       <h2 className="text-3xl font-bold text-center pt-[4rem] mb-12">
         How I Can Contribute & My Key Skills
       </h2>
@@ -134,7 +134,7 @@ export default function SkillsSection() {
             }}
             viewport={{ once: true }}
             className={clsx(
-              "bg-[#111] rounded-2xl p-6 flex flex-col items-center text-center border border-gray-800 transition-colors duration-300 cursor-pointer",
+              "bg-[#0b0f19] rounded-2xl p-6 flex flex-col items-center text-center border border-gray-800 transition-colors duration-300 cursor-pointer",
               skill.hoverColor
             )}
             onClick={() => toggleRotate(index)}
@@ -175,7 +175,7 @@ export default function SkillsSection() {
       }}
       viewport={{ once: true }}
       className={clsx(
-        "bg-[#111] rounded-2xl p-6 flex flex-col items-center text-center border border-gray-800 transition-colors duration-300 cursor-pointer",
+        "bg-[#0b0f19] rounded-2xl p-6 flex flex-col items-center text-center border border-gray-800 transition-colors duration-300 cursor-pointer",
         tool.hoverColor
       )}
     >

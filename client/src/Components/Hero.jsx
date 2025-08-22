@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center text-center h-[auto] min-h-[50rem] bg-black text-white px-4 py-12 md:py-20">
+    <section className="flex flex-col items-center justify-center text-center h-[auto] min-h-[50rem] bg-[#0b0f19] text-white px-4 py-12 md:py-20">
       {/* Round Profile Image */}
       <img
         src="..\assids\Shubham.jpeg"

@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black z-50 text-white px-6 md:px-16 py-4 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full bg-[#0b0f19] z-50 text-white px-6 md:px-16 py-4 shadow-lg">
       <div className="flex justify-between items-center">
         {/* Brand */}
         <h1 className="text-2xl font-bold text-teal-400">

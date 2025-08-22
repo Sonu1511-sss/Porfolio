@@ -27,7 +27,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="bg-black text-white py-12">
+    <section className="bg-[#0b0f19] text-white py-12">
       <div className="flex flex-wrap justify-center gap-6">
         {stats.map((stat, index) => (
           <motion.div

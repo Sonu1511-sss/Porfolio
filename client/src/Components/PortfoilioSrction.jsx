@@ -94,7 +94,7 @@ export default function PortfolioSection() {
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-black text-white py-16 px-6">
+    <div className="min-h-screen bg-[#0b0f19] text-white py-16 px-6">
       <motion.h2
         className="text-3xl font-bold text-center pt-[4rem] mb-12"
         initial={{ opacity: 0, y: -30 }}
@@ -125,7 +125,7 @@ export default function PortfolioSection() {
               stiffness: 100,
             }}
             viewport={{ once: true }}
-            className="bg-[#111] rounded-xl overflow-hidden shadow-lg border border-gray-700 cursor-pointer block"
+            className="bg-[##0b0f19] rounded-xl overflow-hidden shadow-lg border border-gray-700 cursor-pointer block"
           >
             <img
               src={project.image}

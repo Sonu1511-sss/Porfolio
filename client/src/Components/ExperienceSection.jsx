@@ -53,7 +53,7 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <div className="relative bg-black text-white py-24 px-4 md:px-16">
+    <div className="relative bg-[#0b0f19] text-white py-24 px-4 md:px-16">
       <h2 className="text-4xl font-bold text-center mb-20 z-10 relative">
         Professional Work Experience
       </h2>

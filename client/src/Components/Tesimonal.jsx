@@ -25,7 +25,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="bg-black py-12 px-4 sm:px-6 lg:px-8 text-white">
+    <div className="bg-[#0b0f19] py-12 px-4 sm:px-6 lg:px-8 text-white">
       <h2 className="text-4xl font-bold text-center text-white pt-[4rem] mb-12">
         What People Say
       </h2>
@@ -38,7 +38,7 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="bg-black border-2 border-gray-200 p-6 rounded-xl shadow-lg text-center transform transition duration-500 hover:scale-105"
+            className="bg-[#0b0f19] border-2 border-gray-200 p-6 rounded-xl shadow-lg text-center transform transition duration-500 hover:scale-105"
           >
             <img
               src={review.image}

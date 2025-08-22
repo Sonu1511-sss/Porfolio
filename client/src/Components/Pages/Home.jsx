@@ -12,6 +12,7 @@ import PortfolioSection from '../PortfoilioSrction'
 function Home() {
   return (
     <>
+    
     <Hero/>
    <StatsSection />
    <ExperienceSection/>
