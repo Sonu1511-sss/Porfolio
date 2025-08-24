@@ -157,7 +157,7 @@ export default function SkillsSection() {
         ))}
       </div>
     </div>
-    <h2 className="text-3xl font-bold text-center mt-24 mb-12">Tools I Use</h2>
+    <h2 className="text-3xl font-bold text-white text-center mt-24 mb-12">Tools I Use</h2>
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
   {tools.map((tool, index) => (
     <motion.div
@@ -175,7 +175,7 @@ export default function SkillsSection() {
       }}
       viewport={{ once: true }}
       className={clsx(
-        "bg-[#0b0f19] rounded-2xl p-6 flex flex-col items-center text-center border border-gray-800 transition-colors duration-300 cursor-pointer",
+        "text-white rounded-2xl p-6 flex flex-col items-center text-center border border-gray-800 transition-colors duration-300 cursor-pointer",
         tool.hoverColor
       )}
     >
