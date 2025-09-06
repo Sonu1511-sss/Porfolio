@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import { toast, Toaster } from "react-hot-toast"; // npm install react-hot-toast
 
 const contactMethods = [
   { id: 1, title: "Email", detail: "Shubhamuprade0@gmail.com", icon: "📧" },
@@ -14,20 +16,50 @@ const Contact = () => {
     from_email: "",
     message: "",
   });
-  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!formData.from_name || !formData.from_email || !formData.message) {
+      toast.error("Please fill all fields!");
+      return;
+    }
+
+    toast.promise(
+      emailjs.send(
+        "service_fdrkusw", // replace with your EmailJS service ID
+        "template_g7h0uq9", // replace with your EmailJS template ID
+        formData,
+        "gFzus2HCWYTPCvbsu" // replace with your EmailJS public key
+      ),
+      {
+        loading: "Sending message...",
+        success: "Message sent successfully ✅",
+        error: "Failed to send message ❌",
+      }
+    );
+
+    setFormData({ from_name: "", from_email: "", message: "" });
+  };
+
   return (
-    <section className="py-12 bg-[] mt-10 max-w-5xl mx-auto px-6">
-      <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">Contact Me</h2>
+    <section className="py-12 mt-10 max-w-5xl mx-auto px-6">
+      <Toaster position="top-right" />
+      <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">
+        Contact Me
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Form */}
-        <form className="p-8 rounded-xl shadow-xl flex flex-col bg-gray-900">
+        <form
+          onSubmit={handleSubmit}
+          className="p-8 rounded-xl shadow-xl flex flex-col bg-gray-900"
+        >
           <label className="mb-2 font-semibold text-gray-300" htmlFor="from_name">
             Name
           </label>
@@ -72,17 +104,10 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="relative inline-block w-44 px-6 py-3 border-2 border-teal-400 rounded-lg text-teal-400 font-semibold overflow-hidden group focus:outline-none focus:ring-4 focus:ring-teal-500 shadow-lg transition-all duration-300 ease-in-out"
+            className="w-44 px-6 py-3 border-2 border-teal-400 rounded-lg text-teal-400 font-semibold hover:bg-teal-500 hover:text-white transition"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></span>
-            <span className="relative z-10 flex items-center justify-center gap-2">
-              Send Message <span className="animate-bounce">↓</span>
-            </span>
+            Send Message
           </button>
-
-          {status && (
-            <p className="mt-4 text-center text-yellow-400 font-medium animate-pulse">{status}</p>
-          )}
         </form>
 
         {/* Contact Methods */}
