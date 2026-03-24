@@ -6,7 +6,7 @@ export default function StatsSection() {
   const stats = [
     {
       label: "Years of Experience",
-      value: 2,
+      value: 3,
       suffix: "+",
     },
     {

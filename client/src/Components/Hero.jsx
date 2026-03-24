@@ -26,8 +26,7 @@ export default function Hero() {
 
       {/* Short bio */}
       <p className="text-gray-300 max-w-xl sm:max-w-2xl md:max-w-3xl mb-8 px-2 text-sm sm:text-base md:text-lg">
-        Full Stack Developer skilled in the MERN stack, React.js, Node.js, and Tailwind CSS. Strong in Java and DSA, with a flair for UI/UX design. Hackathon participant and AI enthusiast, building modern, user-friendly web apps.
-      </p>
+       Full Stack Developer (MERN) skilled in React.js, Node.js, MongoDB, and Tailwind CSS. Strong in Java and DSA (300+ problems solved) with a focus on scalable architecture and clean code. Hackathon achiever and AI enthusiast building high-performance, user-centric web applications.     </p>
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row gap-4">
@@ -47,7 +46,7 @@ export default function Hero() {
 
         {/* Resume Button */}
         <a
-          href="https://drive.google.com/file/d/1IYNmrUGo6Q_oT9jK9SB8EM_0jar71flb/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1QMSAsnLLvoOsp0gB1cx7qpWKA9Nj1HL7/view?usp=drivesdk"
           className="relative px-8 py-3 text-white font-semibold rounded-full w-fit
             overflow-hidden group border border-white inline-block text-sm sm:text-base md:text-lg"
         >

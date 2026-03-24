@@ -17,9 +17,7 @@ function Home() {
    <StatsSection />
    <ExperienceSection/>
    <SkillsSection/>
-   <PortfolioSection/>
-   <Testimonials/>
-  
+   <PortfolioSection/>  
    <Contact/>
     </>
    
