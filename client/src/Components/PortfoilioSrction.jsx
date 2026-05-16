@@ -21,7 +21,7 @@ const projects = [
     title: 'MedFlow',
     description: 'Developed an AI-powered healthcare platform that enables doctor discovery, appointment booking, and patient management. Integrated features like real-time queue tracking, symptom-based doctor recommendations, chat functionality, and secure payment systems, helping reduce patient waiting time and improve overall accessibility and user experience..',
     image: './assids/MedFlow.png',
-    link: 'https://github.com/harshitsingh4321/Appointy.git',
+    link: 'https://appointy-roan.vercel.app/',
   },
   {
     id: 2,
