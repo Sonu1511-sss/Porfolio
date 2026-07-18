@@ -6,36 +6,38 @@ const projects = [
     id: 10,
     title: 'Code-Genius',
     description: 'Developed Code-Genius, an AI-powered platform for intelligent code generation, debugging, and real-time suggestions. Implemented secure authentication, a scalable backend, and a responsive UI, enhancing developer productivity through features like code completion and instant bug detection.s.',
-    image: './assids/Code-Genius.png',
-    link: 'https://github.com/Sonu1511-sss/Code-Genisis-fullstack',
-  },
-  {
-    id: 1,
-    title: 'SkillSwap',
-    description: 'Developed SkillSwap, a platform that connects individuals who want to learn new skills with those willing to teach. Users can create profiles, showcase their expertise, explore available skills, and request skill exchanges, promoting collaborative learning and community-driven knowledge sharing...',
-    image: './assids/skillswap.png',
-    link: 'https://github.com/Sonu1511-sss/SkillSwapStartup',
+    image: './assids/CodeGenius.png',
+    link: 'https://code-genius-seven.vercel.app/',
   },
    {
     id: 1,
     title: 'MedFlow',
     description: 'Developed an AI-powered healthcare platform that enables doctor discovery, appointment booking, and patient management. Integrated features like real-time queue tracking, symptom-based doctor recommendations, chat functionality, and secure payment systems, helping reduce patient waiting time and improve overall accessibility and user experience..',
-    image: './assids/MedFlow.png',
-    link: 'https://appointy-roan.vercel.app/',
+    image: './assids/Medflow.png',
+    link: 'https://med-flow-lac-five.vercel.app/',
   },
+  {
+  id: 1,
+  title: "Codeza",
+  description:
+    "Designed and developed a responsive business website for Codeza using React.js, Tailwind CSS, Framer Motion, and Vite. Created an interactive UI with smooth animations, service pages, portfolio showcase, and contact section, delivering a fast and modern user experience.",
+  image: "./assids/codeza.png",
+  link: "https://codeze-startup.vercel.app/",
+},
+  {
+    id: 1,
+    title: 'SkillSwap',
+    description: 'Developed SkillSwap, a platform that connects individuals who want to learn new skills with those willing to teach. Users can create profiles, showcase their expertise, explore available skills, and request skill exchanges, promoting collaborative learning and community-driven knowledge sharing...',
+    image: './assids/SkillSwap.png',
+    link: 'https://skill-swap-startup.vercel.app/',
+  },
+  
   {
     id: 2,
     title: 'Hangry Food',
     description: 'Developed Hangry Food, a user-friendly food delivery application that allows users to browse meals and place orders seamlessly. Focused on a fast, responsive interface and smooth ordering experience to ensure convenience and an efficient dining solution...',
     image: './assids/project 7.png',
     link: 'https://hangry-frontend-seven.vercel.app/',
-  },
-    {
-    id: 1,
-    title: 'PUMA Shoes E-commerce',
-    description: 'Developed a sleek e-commerce web application for PUMA footwear featuring product listings, detailed product pages, cart functionality, and a streamlined checkout process, delivering a smooth and user-friendly shopping experience.s...',
-    image: './assids/puma-.png',
-    link: 'https://mern-puma-f.vercel.app/',
   },
   {
     id: 7,
@@ -100,22 +102,26 @@ export default function PortfolioSection() {
         ))}
       </div>
 
-      <motion.div
-        className="text-center mt-10"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
-      >
-        <motion.button
-          onClick={() => setShowAll(!showAll)}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-6 py-2 text-white border border-gray-600 rounded hover:bg-white hover:text-black transition duration-300"
-        >
-          {showAll ? "Show Less" : "View More Projects"}
-        </motion.button>
-      </motion.div>
+    <motion.div
+  className="text-center mt-10"
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6, delay: 0.3 }}
+  viewport={{ once: true }}
+>
+  <motion.button
+    onClick={() => setShowAll(!showAll)}
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="relative overflow-hidden group px-8 py-3 text-white font-semibold border border-teal-400 rounded-[40px] transition-all duration-300"
+  >
+    <span className="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-500 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+
+    <span className="relative z-10">
+      {showAll ? "Show Less" : "View More Projects"}
+    </span>
+  </motion.button>
+</motion.div>
     </div>
   );
 }
