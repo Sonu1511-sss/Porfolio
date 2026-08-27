@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const profileImg = "/assids/Shubham.jpeg";
+const profileImg = "./assids/shubham.jpeg";
 
 export default function Hero() {
   return (
@@ -10,7 +9,7 @@ export default function Hero() {
       <img
         src={profileImg}
         alt="Shubham Uprade"
-        className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full border-2 border-teal-400 shadow-2xl mb-8 object-cover"
+        className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full border-1 border-teal-400 shadow-2xl mb-8 object-cover"
       />
 
       {/* Name */}
@@ -30,23 +29,23 @@ export default function Hero() {
       {/* About */}
       <p
         className="
-          max-w-xs
-          sm:max-w-xl
-          md:max-w-2xl
-          lg:max-w-3xl
-          xl:max-w-4xl
-          text-gray-400
-          text-sm
-          sm:text-base
-          md:text-lg
-          lg:text-xl
-          leading-7
-          sm:leading-8
-          md:leading-9
-          px-2
-          sm:px-6
-          mb-10
-        "
+    max-w-xs
+    sm:max-w-xl
+    md:max-w-2xl
+    lg:max-w-3xl
+    xl:max-w-4xl
+    text-gray-400
+    text-sm
+    sm:text-base
+    md:text-lg
+    lg:text-xl
+    leading-7
+    sm:leading-8
+    md:leading-9
+    px-2
+    sm:px-6
+    mb-10
+  "
       >
         Full Stack Developer (MERN) with experience in React.js, Node.js,
         Express.js, MongoDB, and Tailwind CSS. Currently working as a{" "}
