@@ -19,7 +19,7 @@ export function ProjectCardSkeleton() {
         <div className="h-4 bg-gray-800 rounded w-full mb-2" />
         <div className="h-4 bg-gray-800 rounded w-5/6 mb-4" />
         <div className="mt-auto flex flex-wrap gap-2 pt-2">
-          <div className="h-6 w-16 bg-gray-800 rounded-full" />
+          <div className="h-6 w-14 bg-gray-800 rounded-full" />
           <div className="h-6 w-14 bg-gray-800 rounded-full" />
           <div className="h-6 w-20 bg-gray-800 rounded-full" />
         </div>
